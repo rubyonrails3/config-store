@@ -1,0 +1,21 @@
+<h1> Create New Config </h1>
+
+<%= form_for @config do |f| %>
+  <div class="form-group">
+    <%= f.label :key, 'Name' %>
+    <%= f.text_field :key, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :value %>
+    <%= f.text_field :value, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :value %>
+    <%= f.select :type, ActiveConfig::TYPE, class: 'form-control' %>
+  </div>
+
+  <%= f.submit 'Save', class: 'btn btn-default' %>
+
+<% end %>

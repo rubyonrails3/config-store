@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Type</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @configs.each do |config| %>
+      <tr>
+        <td><%= config.key %></td>
+        <td><%= config.value %></td>
+        <td><%= config.type %></td>
+        <td><%= link_to 'Edit', [:edit, config] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
