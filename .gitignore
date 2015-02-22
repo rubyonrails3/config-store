@@ -15,3 +15,10 @@
 /log/*
 !/log/.keep
 /tmp
+
+# VIM temp files
+*.swp
+*.swo
+
+# Mac directory file
+.DS_Store
